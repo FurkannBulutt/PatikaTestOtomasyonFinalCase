@@ -1,0 +1,26 @@
+package stepdefinitions;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.Then;
+
+public class LoginSteps {
+
+    @Given("Kullanıcı giriş sayfasına gider")
+    public void kullanıcı_giriş_sayfasına_gider() {
+        // Giriş sayfasına gitme kodu
+        System.out.println("Navigating to login page");
+    }
+
+    @When("Geçerli kullanıcı adı ve şifreyi girer")
+    public void geçerli_kullanıcı_adı_ve_şifreyi_girer() {
+        // Kullanıcı adı ve şifreyi girme kodu
+        System.out.println("Entering valid credentials");
+    }
+
+    @Then("Ana sayfaya yönlendirilir")
+    public void ana_sayfaya_yönlendirilir() {
+        // Ana sayfaya yönlendirilip yönlendirilmediğini kontrol etme kodu
+        System.out.println("Redirected to homepage");
+    }
+}
